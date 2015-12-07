@@ -1,0 +1,33 @@
+/*************************************************|
+| Styles for the headers of the framework, modify |
+| stuff here if you want to change the way they   |
+| look                                            |
+*************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headerfontcolor;
+}
+
+h1 {
+  font-size: 3.157rem;
+}
+
+h2 {
+  font-size: 2.369rem;
+}
+
+h3 {
+  font-size: 1.777rem;
+}
+
+h4 {
+  font-size: 1.333rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}

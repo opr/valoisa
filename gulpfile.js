@@ -1,7 +1,7 @@
 // Include gulp
 var gulp = require('gulp');
 
-var appUrl = "homepage.app";
+var appUrl = "valoisa.local";
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -32,12 +32,12 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
+    return gulp.src('assets/styles/scss/**/*.scss')
         .pipe(plumber({errorHandler: errorAlert}))
         .pipe(sass())
-        .pipe(gulp.dest('./'))
-        .pipe(browsersync.stream())
-        .pipe(notify({message: "Sass compilation complete", title: "Compilation Successful"}));
+        .pipe(gulp.dest('./assets/styles/css/'))
+        .pipe(browsersync.stream());
+        //.pipe(notify({message: "Sass compilation complete", title: "Compilation Successful"}));
 });
 
 // Concatenate & Minify JS
@@ -55,7 +55,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     gulp.watch('dist/all.min.js').on( 'change', browsersync.reload);
     gulp.watch('assets/js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('assets/styles/scss/**/*.scss', ['sass']).on( 'change', browsersync.stream );
 });
 
 // Default Task
@@ -63,7 +63,6 @@ gulp.task('default', ['lint', 'sass', 'scripts', 'watch', 'browser-sync']);
 
 
 function errorAlert(error){
-    notify.onError({title: "SCSS Error", message: "Check your terminal", sound: "Sosumi"})(error); //Error Notification
     console.log(error.toString());//Prints Error to Console
     this.emit("end"); //End function
 };

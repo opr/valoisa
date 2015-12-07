@@ -4,3 +4,29 @@
 | any of your own sass files, you should add them |
 | at the bottom of this file.                     |
 *************************************************/
+
+@import "config/reset";
+
+/*************************************************|
+| Gotta put the mixins now so we have cool        |
+| functions to use to save us time and money.     |
+*************************************************/
+
+@import "mixins/breakpoint";
+
+/*************************************************|
+| We just reset everything so all styles below    |
+| will be on a fresh canvas, delicious!  Just     |
+| some configuration then we can actually do some |
+| styling!
+*************************************************/
+
+@import "config/variables";
+@import "config/fonts";
+
+/*************************************************|
+| Now we can actually get on with making the site |
+| styles                                          |
+*************************************************/
+
+@import "components/headings";

@@ -1,0 +1,11 @@
+/*************************************************|
+| The breakpoint mixin, this will probably suit   |
+| your needs, but feel free to hack it if it      |
+| doesn't                                         |
+*************************************************/
+
+@mixin bp($point) {
+
+    @media (min-width: $point)  { @content; }
+
+}
