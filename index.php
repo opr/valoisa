@@ -10,5 +10,10 @@
 <h3>Header 3</h3>
 <h4>Header 4</h4>
 <h5>Header 5</h5>
+
+<form action="" method="get">
+	<input type="text" name="">
+	<button>Submit</button>
+</form>
 </body>
 </html>

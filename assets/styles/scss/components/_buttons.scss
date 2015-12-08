@@ -3,6 +3,12 @@
 *************************************************/
 
 button {
-  border-radius: 4px;
   background: $primary;
+  border: 0;
+  color: $buttontextcolor;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
 }
