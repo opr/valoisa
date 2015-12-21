@@ -7,6 +7,14 @@
 
 @import "config/reset";
 
+
+/*************************************************|
+| Helpers are classes that are useful but aren't  |
+| really considered to "style" the element.       |
+*************************************************/
+
+@import "helpers/clearfix";
+
 /*************************************************|
 | Gotta put the mixins now so we have cool        |
 | functions to use to save us time and money.     |
@@ -32,3 +40,14 @@
 @import "components/headings";
 @import "components/buttons";
 @import "components/inputs";
+@import "components/transitions";
+@import "components/grid";
+@import "components/container";
+
+/*************************************************|
+| Properties for elements, such as text-alignment |
+| or background colouring.                        |
+*************************************************/
+
+@import "properties/background";
+@import "properties/padding";

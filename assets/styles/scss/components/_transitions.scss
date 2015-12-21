@@ -1,10 +1,7 @@
 /*************************************************|
-| Styles for the buttons in the framework         |
+| Transtion classes                               |
 *************************************************/
 
-button {
-
-  &:focus {
-    outline: none;
-  }
+.transition {
+  transition: all 1s ease;
 }

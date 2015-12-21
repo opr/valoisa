@@ -1,0 +1,12 @@
+/*************************************************|
+| Container                                       |
+*************************************************/
+
+.container {
+
+  @include bp($desktop) {
+    max-width: $max-width;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

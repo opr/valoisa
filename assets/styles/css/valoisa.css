@@ -53,6 +53,23 @@ table {
   border-spacing: 0; }
 
 /*************************************************|
+| Helpers are classes that are useful but aren't  |
+| really considered to "style" the element.       |
+*************************************************/
+/*************************************************|
+| For elements that have floating elements inside |
+| of them, this causes the container to have the  |
+| proper height.
+*************************************************/
+.cf:after, .row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/*************************************************|
 | Gotta put the mixins now so we have cool        |
 | functions to use to save us time and money.     |
 *************************************************/
@@ -86,6 +103,12 @@ table {
 | Form Controls                                   |
 *************************************************/
 /*************************************************|
+| Grid Variables                                  |
+*************************************************/
+/*************************************************|
+| Padding Variables                               |
+*************************************************/
+/*************************************************|
 | Put your fonts in here                          |
 *************************************************/
 html {
@@ -97,10 +120,10 @@ html {
       font-size: 16px; } }
   @media (min-width: 960px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (min-width: 1260px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 /*************************************************|
 | Now we can actually get on with making the site |
@@ -135,13 +158,8 @@ h6 {
 /*************************************************|
 | Styles for the buttons in the framework         |
 *************************************************/
-button {
-  background: #3a4a9a;
-  border: 0;
-  color: #aabbcc;
-  padding: 10px; }
-  button:focus {
-    outline: none; }
+button:focus {
+  outline: none; }
 
 /*************************************************|
 | Input elements                                  |
@@ -150,3 +168,129 @@ input {
   height: 30px; }
   input:focus {
     outline: none; }
+
+/*************************************************|
+| Transtion classes                               |
+*************************************************/
+.transition {
+  transition: all 1s ease; }
+
+/*************************************************|
+| Grid                                            |
+*************************************************/
+.row [class*="col-"] {
+  margin-left: 3.5%;
+  float: left; }
+  .row [class*="col-"]:first-child {
+    margin-left: 0; }
+
+.row.no-margins {
+  margin-left: 0; }
+
+.row .col-1 {
+  width: 21.5%; }
+
+.row .col-2 {
+  width: 46.5%; }
+
+.row .col-3 {
+  width: 71.5%; }
+
+@media (min-width: 760px) {
+  .row .col-1 {
+    width: 9%; }
+  .row .col-2 {
+    width: 21.5%; }
+  .row .col-3 {
+    width: 34%; }
+  .row .col-4 {
+    width: 46.5%; }
+  .row .col-5 {
+    width: 59%; }
+  .row .col-6 {
+    width: 71.5%; }
+  .row .col-7 {
+    width: 84%; } }
+
+@media (min-width: 960px) {
+  .row .col-1 {
+    width: 9%; }
+  .row .col-2 {
+    width: 21.5%; }
+  .row .col-3 {
+    width: 34%; }
+  .row .col-4 {
+    width: 46.5%; }
+  .row .col-5 {
+    width: 59%; }
+  .row .col-6 {
+    width: 71.5%; }
+  .row .col-7 {
+    width: 84%; } }
+
+@media (min-width: 1260px) {
+  .row .col-1 {
+    width: 4.83333%; }
+  .row .col-2 {
+    width: 13.16667%; }
+  .row .col-3 {
+    width: 21.5%; }
+  .row .col-4 {
+    width: 29.83333%; }
+  .row .col-5 {
+    width: 38.16667%; }
+  .row .col-6 {
+    width: 46.5%; }
+  .row .col-7 {
+    width: 54.83333%; }
+  .row .col-8 {
+    width: 63.16667%; }
+  .row .col-9 {
+    width: 71.5%; }
+  .row .col-10 {
+    width: 79.83333%; }
+  .row .col-11 {
+    width: 88.16667%; } }
+
+/*************************************************|
+| Container                                       |
+*************************************************/
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto; } }
+
+/*************************************************|
+| Properties for elements, such as text-alignment |
+| or background colouring.                        |
+*************************************************/
+/*************************************************|
+| Background properties                           |
+*************************************************/
+.bg-primary {
+  background: #aa88ff; }
+
+.bg-secondary {
+  background: #4a3a9a; }
+
+.bg-tertiary {
+  background: #9a3a9a; }
+
+/*************************************************|
+| Padding properties                              |
+*************************************************/
+.pad {
+  padding: 1em; }
+
+.pad-l {
+  padding-left: 1em; }
+
+.pad-r {
+  padding-right: 1em; }
+
+.pad-t {
+  padding-top: 1em; }
+
+.pad-b {
+  padding-bottom: 1em; }

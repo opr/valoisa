@@ -1,0 +1,57 @@
+/*************************************************|
+| Grid                                            |
+*************************************************/
+
+.row {
+  @extend .cf;
+  [class*="col-"] {
+
+    margin-left: $gutter__mobile;
+    float: left;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &.no-margins {
+    margin-left: 0;
+  }
+
+  @for $i from 1 to $columncount__mobile {
+
+    .col-#{$i} {
+      width: (100/$columncount__mobile) * $i - $gutter__mobile;
+    }
+  }
+
+  @include bp( $tablet ) {
+
+    @for $i from 1 to $columncount__tablet {
+
+      .col-#{$i} {
+        width: (100/$columncount__tablet) * $i - $gutter__tablet;
+      }
+    }
+  }
+
+  @include bp( $landscapetablet ) {
+
+    @for $i from 1 to $columncount__landscapetablet {
+
+      .col-#{$i} {
+        width: (100/$columncount__landscapetablet) * $i - $gutter__landscapetablet;
+      }
+    }
+  }
+
+  @include bp( $desktop ) {
+
+    @for $i from 1 to $columncount__desktop {
+
+      .col-#{$i} {
+        width: (100/$columncount__desktop) * $i - $gutter__desktop;
+      }
+    }
+  }
+}

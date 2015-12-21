@@ -2,17 +2,17 @@
 | Breakpoints                                     |
 *************************************************/
 
-$mobile                         : 320px;
-$tablet                         : 760px;
-$landscapetablet                 : 960px;
-$desktop                        : 1260px;
+$mobile                            : 320px;
+$tablet                            : 760px;
+$landscapetablet                   : 960px;
+$desktop                           : 1260px;
 
 /*************************************************|
 | Fonts                                           |
 *************************************************/
 
-$basefont         : 'Raleway', sans-serif;
-$headerfont       : 'Raleway', sans-serif;
+$basefont                          : 'Raleway', sans-serif;
+$headerfont                        : 'Raleway', sans-serif;
 
 /*************************************************|
 | Font Sizes                                      |
@@ -20,8 +20,8 @@ $headerfont       : 'Raleway', sans-serif;
 
 $basefontsize__mobile              : 14px;
 $basefontsize__tablet_portrait     : 16px;
-$basefontsize__tablet_landscape    : 18px;
-$basefontsize__desktop             : 18px;
+$basefontsize__tablet_landscape    : 16px;
+$basefontsize__desktop             : 16px;
 
 /*************************************************|
 | Font Colours                                    |
@@ -35,7 +35,7 @@ $buttontextcolor                   : #aabbcc;
 | Colours                                         |
 *************************************************/
 
-$primary                           : #3a4a9a;
+$primary                           : #aa88ff;
 $secondary                         : #4a3a9a;
 $tertiary                          : #9a3a9a;
 
@@ -44,3 +44,24 @@ $tertiary                          : #9a3a9a;
 *************************************************/
 
 $inputheight                       : 30px;
+
+/*************************************************|
+| Grid Variables                                  |
+*************************************************/
+
+$max-width                         : 1200px;
+$columncount__desktop              : 12;
+$columncount__landscapetablet      : 8;
+$columncount__tablet               : 8;
+$columncount__mobile               : 4;
+$gutter__desktop                   : 3.5%;
+$gutter__landscapetablet           : 3.5%;
+$gutter__tablet                    : 3.5%;
+$gutter__mobile                    : 3.5%;
+
+/*************************************************|
+| Padding Variables                               |
+*************************************************/
+
+$basepadding                       : 1em;
+$largepadding                      : 1.8em;

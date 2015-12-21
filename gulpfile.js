@@ -12,6 +12,7 @@ var rename = require('gulp-rename');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var browsersync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('browser-sync', function() {
@@ -36,6 +37,10 @@ gulp.task('sass', function() {
         .pipe(plumber({errorHandler: errorAlert}))
         .pipe(sass())
         .pipe(gulp.dest('./assets/styles/css/'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(browsersync.stream());
         //.pipe(notify({message: "Sass compilation complete", title: "Compilation Successful"}));
 });
