@@ -21,29 +21,29 @@
 		<button>Submit</button>
 	</form>
 
-	<div class="row bg-secondary pad tac">
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
-		<div class="bg-primary col-1">1/12</div>
+	<div class="row bg-secondary pad tac no-margins">
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2">1/12</div>
 	</div>
 
 
-	<div class="row">
-		<div class="col-2">2/12</div>
-		<div class="col-2">2/12</div>
-		<div class="col-2">2/12</div>
-		<div class="col-2">2/12</div>
-		<div class="col-2">2/12</div>
-		<div class="col-2">2/12</div>
+	<div class="row bg-tertiary pad tac">
+		<div class="col-2 col-m-4">2/12</div>
+		<div class="col-2 col-m-4">2/12</div>
+		<div class="col-2 col-m-4">2/12</div>
+		<div class="col-2 col-m-4">2/12</div>
+		<div class="col-2 col-m-4">2/12</div>
+		<div class="col-2 col-m-4">2/12</div>
 	</div>
 
 	<div class="row">
@@ -73,6 +73,10 @@
 	<div class="row">
 		<div class="col-7">7/12</div>
 		<div class="col-5">5/12</div>
+	</div>
+
+	<div class="row tac">
+		<div class="col-12">12/12</div>
 	</div>
 </div>
 </body>
