@@ -18,11 +18,11 @@
 
 	<form action="" method="get">
 		<input type="text" name="">
-		<button>Submit</button>
+		<button class="transition">Submit</button>
 	</form>
 
 	<div class="row bg-secondary pad tac no-margins">
-		<div class="bg-primary col-1 col-t-2">1/12</div>
+		<div class="bg-primary col-1 col-t-2 col-lt-5">1/12</div>
 		<div class="bg-primary col-1 col-t-2">1/12</div>
 		<div class="bg-primary col-1 col-t-2">1/12</div>
 		<div class="bg-primary col-1 col-t-2">1/12</div>
@@ -75,8 +75,8 @@
 		<div class="col-5">5/12</div>
 	</div>
 
-	<div class="row tac">
-		<div class="col-12">12/12</div>
+	<div class="row bg-primary pad tac">
+		<div class="col-m-3 col-lt-8 col-12 col-t-2">12/12</div>
 	</div>
 </div>
 </body>

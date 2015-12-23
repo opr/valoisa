@@ -115,7 +115,7 @@ html {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #393939; }
-  @media (min-width: 760px) {
+  @media (min-width: 560px) {
     html {
       font-size: 16px; } }
   @media (min-width: 960px) {
@@ -161,6 +161,9 @@ h6 {
 button:focus {
   outline: none; }
 
+button:hover {
+  background: red; }
+
 /*************************************************|
 | Input elements                                  |
 *************************************************/
@@ -173,7 +176,7 @@ input {
 | Transtion classes                               |
 *************************************************/
 .transition {
-  transition: all 1s ease; }
+  transition: all 0.35s ease-in; }
 
 /*************************************************|
 | Grid                                            |
@@ -230,7 +233,7 @@ input {
 .row .col-m-4 {
   width: 96.5%; }
 
-@media (min-width: 760px) {
+@media (min-width: 560px) {
   .row .col-t-1 {
     width: 9%; }
   .row .col-t-2 {
@@ -250,20 +253,24 @@ input {
 
 @media (min-width: 960px) {
   .row .col-lt-1 {
-    width: 9%; }
+    width: 6.5%; }
   .row .col-lt-2 {
-    width: 21.5%; }
+    width: 16.5%; }
   .row .col-lt-3 {
-    width: 34%; }
+    width: 26.5%; }
   .row .col-lt-4 {
-    width: 46.5%; }
+    width: 36.5%; }
   .row .col-lt-5 {
-    width: 59%; }
+    width: 46.5%; }
   .row .col-lt-6 {
-    width: 71.5%; }
+    width: 56.5%; }
   .row .col-lt-7 {
-    width: 84%; }
+    width: 66.5%; }
   .row .col-lt-8 {
+    width: 76.5%; }
+  .row .col-lt-9 {
+    width: 86.5%; }
+  .row .col-lt-10 {
     width: 96.5%; } }
 
 @media (min-width: 1260px) {
@@ -342,7 +349,7 @@ input {
 .row.no-margins .col-m-3 {
   width: 75%; }
 
-@media (min-width: 760px) {
+@media (min-width: 560px) {
   .row.no-margins .col-t-1 {
     width: 12.5%; }
   .row.no-margins .col-t-2 {
@@ -362,20 +369,24 @@ input {
 
 @media (min-width: 960px) {
   .row.no-margins .col-lt-1 {
-    width: 12.5%; }
+    width: 10%; }
   .row.no-margins .col-lt-2 {
-    width: 25%; }
+    width: 20%; }
   .row.no-margins .col-lt-3 {
-    width: 37.5%; }
+    width: 30%; }
   .row.no-margins .col-lt-4 {
-    width: 50%; }
+    width: 40%; }
   .row.no-margins .col-lt-5 {
-    width: 62.5%; }
+    width: 50%; }
   .row.no-margins .col-lt-6 {
-    width: 75%; }
+    width: 60%; }
   .row.no-margins .col-lt-7 {
-    width: 87.5%; }
+    width: 70%; }
   .row.no-margins .col-lt-8 {
+    width: 80%; }
+  .row.no-margins .col-lt-9 {
+    width: 90%; }
+  .row.no-margins .col-lt-10 {
     width: 100%; } }
 
 @media (min-width: 1260px) {

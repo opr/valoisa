@@ -9,3 +9,9 @@
     @media (min-width: $point)  { @content; }
 
 }
+
+@mixin bp-max($point) {
+
+    @media (max-width: $point)  { @content; }
+
+}
