@@ -1,0 +1,3 @@
+#Ignore .idea because it's phpstorm's settings.
+.idea
+node_modules

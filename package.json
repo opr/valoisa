@@ -1,0 +1,24 @@
+{
+  "name": "valoisa",
+  "version": "1.0.0",
+  "description": "A responsive CSS Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-autoprefixer": "~3.1.0"
+  }
+}

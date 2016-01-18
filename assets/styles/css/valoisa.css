@@ -1,0 +1,497 @@
+/*************************************************|
+| Welcome to Valoisa. This is the main file we'll |
+| compile our stylesheet from. If you want to add |
+| any of your own sass files, you should add them |
+| at the bottom of this file.                     |
+*************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*************************************************|
+| Helpers are classes that are useful but aren't  |
+| really considered to "style" the element.       |
+*************************************************/
+/*************************************************|
+| For elements that have floating elements inside |
+| of them, this causes the container to have the  |
+| proper height.
+*************************************************/
+.cf:after, .row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/*************************************************|
+| Gotta put the mixins now so we have cool        |
+| functions to use to save us time and money.     |
+*************************************************/
+/*************************************************|
+| The breakpoint mixin, this will probably suit   |
+| your needs, but feel free to hack it if it      |
+| doesn't                                         |
+*************************************************/
+/*************************************************|
+| We just reset everything so all styles below    |
+| will be on a fresh canvas, delicious!  Just     |
+| some configuration then we can actually do some |
+| styling!
+*************************************************/
+/*************************************************|
+| Breakpoints                                     |
+*************************************************/
+/*************************************************|
+| Fonts                                           |
+*************************************************/
+/*************************************************|
+| Font Sizes                                      |
+*************************************************/
+/*************************************************|
+| Font Colours                                    |
+*************************************************/
+/*************************************************|
+| Colours                                         |
+*************************************************/
+/*************************************************|
+| Form Controls                                   |
+*************************************************/
+/*************************************************|
+| Grid Variables                                  |
+*************************************************/
+/*************************************************|
+| Padding Variables                               |
+*************************************************/
+/*************************************************|
+| Put your fonts in here                          |
+*************************************************/
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #393939; }
+  @media (min-width: 560px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 960px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 1260px) {
+    html {
+      font-size: 16px; } }
+
+/*************************************************|
+| Now we can actually get on with making the site |
+| styles                                          |
+*************************************************/
+/*************************************************|
+| Styles for the headers of the framework, modify |
+| stuff here if you want to change the way they   |
+| look                                            |
+*************************************************/
+h1, h2, h3, h4, h5, h6 {
+  color: #373737; }
+
+h1 {
+  font-size: 3.157rem; }
+
+h2 {
+  font-size: 2.369rem; }
+
+h3 {
+  font-size: 1.777rem; }
+
+h4 {
+  font-size: 1.333rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.75rem; }
+
+/*************************************************|
+| Styles for the buttons in the framework         |
+*************************************************/
+<<<<<<< HEAD
+button {
+  color: #00ff00;
+  font-size: 100px; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    background: red; }
+=======
+button:focus {
+  outline: none; }
+
+button:hover {
+  background: red; }
+>>>>>>> 6e9ddaeb6237cac8e3da66796912eccbbf6ea5e0
+
+/*************************************************|
+| Input elements                                  |
+*************************************************/
+input {
+  height: 30px; }
+  input:focus {
+    outline: none; }
+
+/*************************************************|
+| Transtion classes                               |
+*************************************************/
+.transition {
+  transition: all 0.35s ease-in; }
+
+/*************************************************|
+| Grid                                            |
+*************************************************/
+.row [class*="col-"] {
+  margin-left: 3.5%;
+  float: left; }
+
+.row .col-1 {
+  width: 4.53333%; }
+
+.row .col-2 {
+  width: 12.86667%; }
+
+.row .col-3 {
+  width: 21.2%; }
+
+.row .col-4 {
+  width: 29.53333%; }
+
+.row .col-5 {
+  width: 37.86667%; }
+
+.row .col-6 {
+  width: 46.2%; }
+
+.row .col-7 {
+  width: 54.53333%; }
+
+.row .col-8 {
+  width: 62.86667%; }
+
+.row .col-9 {
+  width: 71.2%; }
+
+.row .col-10 {
+  width: 79.53333%; }
+
+.row .col-11 {
+  width: 87.86667%; }
+
+.row .col-12 {
+  width: 96.2%; }
+
+.row .col-m-1 {
+  width: 21.5%; }
+
+.row .col-m-2 {
+  width: 46.5%; }
+
+.row .col-m-3 {
+  width: 71.5%; }
+
+.row .col-m-4 {
+  width: 96.5%; }
+
+@media (min-width: 560px) {
+  .row .col-t-1 {
+    width: 9%; }
+  .row .col-t-2 {
+    width: 21.5%; }
+  .row .col-t-3 {
+    width: 34%; }
+  .row .col-t-4 {
+    width: 46.5%; }
+  .row .col-t-5 {
+    width: 59%; }
+  .row .col-t-6 {
+    width: 71.5%; }
+  .row .col-t-7 {
+    width: 84%; }
+  .row .col-t-8 {
+    width: 96.5%; } }
+
+@media (min-width: 960px) {
+  .row .col-lt-1 {
+    width: 6.5%; }
+  .row .col-lt-2 {
+    width: 16.5%; }
+  .row .col-lt-3 {
+    width: 26.5%; }
+  .row .col-lt-4 {
+    width: 36.5%; }
+  .row .col-lt-5 {
+    width: 46.5%; }
+  .row .col-lt-6 {
+    width: 56.5%; }
+  .row .col-lt-7 {
+    width: 66.5%; }
+  .row .col-lt-8 {
+    width: 76.5%; }
+  .row .col-lt-9 {
+    width: 86.5%; }
+  .row .col-lt-10 {
+    width: 96.5%; } }
+
+@media (min-width: 1260px) {
+  .row .col-1 {
+    width: 4.53333%; }
+  .row .col-2 {
+    width: 12.86667%; }
+  .row .col-3 {
+    width: 21.2%; }
+  .row .col-4 {
+    width: 29.53333%; }
+  .row .col-5 {
+    width: 37.86667%; }
+  .row .col-6 {
+    width: 46.2%; }
+  .row .col-7 {
+    width: 54.53333%; }
+  .row .col-8 {
+    width: 62.86667%; }
+  .row .col-9 {
+    width: 71.2%; }
+  .row .col-10 {
+    width: 79.53333%; }
+  .row .col-11 {
+    width: 87.86667%; }
+  .row .col-12 {
+    width: 96.2%; } }
+
+.row.no-margins [class*="col-"] {
+  margin-left: 0; }
+  .row.no-margins [class*="col-"]:first-child {
+    margin-left: 0; }
+
+.row.no-margins .col-1 {
+  width: 8.33333%; }
+
+.row.no-margins .col-2 {
+  width: 16.66667%; }
+
+.row.no-margins .col-3 {
+  width: 25%; }
+
+.row.no-margins .col-4 {
+  width: 33.33333%; }
+
+.row.no-margins .col-5 {
+  width: 41.66667%; }
+
+.row.no-margins .col-6 {
+  width: 50%; }
+
+.row.no-margins .col-7 {
+  width: 58.33333%; }
+
+.row.no-margins .col-8 {
+  width: 66.66667%; }
+
+.row.no-margins .col-9 {
+  width: 75%; }
+
+.row.no-margins .col-10 {
+  width: 83.33333%; }
+
+.row.no-margins .col-11 {
+  width: 91.66667%; }
+
+.row.no-margins .col-12 {
+  width: 100%; }
+
+.row.no-margins .col-m-1 {
+  width: 25%; }
+
+.row.no-margins .col-m-2 {
+  width: 50%; }
+
+.row.no-margins .col-m-3 {
+  width: 75%; }
+
+@media (min-width: 560px) {
+  .row.no-margins .col-t-1 {
+    width: 12.5%; }
+  .row.no-margins .col-t-2 {
+    width: 25%; }
+  .row.no-margins .col-t-3 {
+    width: 37.5%; }
+  .row.no-margins .col-t-4 {
+    width: 50%; }
+  .row.no-margins .col-t-5 {
+    width: 62.5%; }
+  .row.no-margins .col-t-6 {
+    width: 75%; }
+  .row.no-margins .col-t-7 {
+    width: 87.5%; }
+  .row.no-margins .col-t-8 {
+    width: 100%; } }
+
+@media (min-width: 960px) {
+  .row.no-margins .col-lt-1 {
+    width: 10%; }
+  .row.no-margins .col-lt-2 {
+    width: 20%; }
+  .row.no-margins .col-lt-3 {
+    width: 30%; }
+  .row.no-margins .col-lt-4 {
+    width: 40%; }
+  .row.no-margins .col-lt-5 {
+    width: 50%; }
+  .row.no-margins .col-lt-6 {
+    width: 60%; }
+  .row.no-margins .col-lt-7 {
+    width: 70%; }
+  .row.no-margins .col-lt-8 {
+    width: 80%; }
+  .row.no-margins .col-lt-9 {
+    width: 90%; }
+  .row.no-margins .col-lt-10 {
+    width: 100%; } }
+
+@media (min-width: 1260px) {
+  .row.no-margins .col-1 {
+    width: 8.33333%; }
+  .row.no-margins .col-2 {
+    width: 16.66667%; }
+  .row.no-margins .col-3 {
+    width: 25%; }
+  .row.no-margins .col-4 {
+    width: 33.33333%; }
+  .row.no-margins .col-5 {
+    width: 41.66667%; }
+  .row.no-margins .col-6 {
+    width: 50%; }
+  .row.no-margins .col-7 {
+    width: 58.33333%; }
+  .row.no-margins .col-8 {
+    width: 66.66667%; }
+  .row.no-margins .col-9 {
+    width: 75%; }
+  .row.no-margins .col-10 {
+    width: 83.33333%; }
+  .row.no-margins .col-11 {
+    width: 91.66667%; }
+  .row.no-margins .col-12 {
+    width: 100%; } }
+
+/*************************************************|
+| Container                                       |
+*************************************************/
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto; } }
+
+/*************************************************|
+| Properties for elements, such as text-alignment |
+| or background colouring.                        |
+*************************************************/
+/*************************************************|
+| Background properties                           |
+*************************************************/
+.bg-primary {
+<<<<<<< HEAD
+  background: #ff00ff; }
+
+.bg-secondary {
+  background: #ff0000; }
+=======
+  background: #aa88ff; }
+
+.bg-secondary {
+  background: #4a3a9a; }
+>>>>>>> 6e9ddaeb6237cac8e3da66796912eccbbf6ea5e0
+
+.bg-tertiary {
+  background: #9a3a9a; }
+
+/*************************************************|
+| Padding properties                              |
+*************************************************/
+.pad {
+  padding: 1em; }
+
+.pad-l {
+  padding-left: 1em; }
+
+.pad-r {
+  padding-right: 1em; }
+
+.pad-t {
+  padding-top: 1em; }
+
+.pad-b {
+  padding-bottom: 1em; }
+
+/*************************************************|
+| Text align properties                           |
+*************************************************/
+.tac {
+  text-align: center; }
+
+.tal {
+  text-align: left; }
+
+.tar {
+  text-align: right; }
+
+.taj {
+  text-align: justify; }
+
+.rtl {
+  direction: rtl; }
+
+.ltr {
+  direction: ltr; }

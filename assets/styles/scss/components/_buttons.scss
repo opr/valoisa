@@ -1,0 +1,20 @@
+/*************************************************|
+| Styles for the buttons in the framework         |
+*************************************************/
+
+button {
+
+<<<<<<< HEAD
+  color:#00ff00;
+  font-size: 100px;
+
+=======
+>>>>>>> 6e9ddaeb6237cac8e3da66796912eccbbf6ea5e0
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: red;
+  }
+}

@@ -1,0 +1,23 @@
+/*************************************************|
+| Put your fonts in here                          |
+*************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+html {
+  font-family: $basefont;
+  font-size: $basefontsize__mobile;
+  color: $basefontcolor;
+
+  @include bp($tablet) {
+    font-size: $basefontsize__tablet_portrait;
+  }
+
+  @include bp($landscapetablet) {
+    font-size: $basefontsize__tablet_landscape;
+  }
+
+  @include bp($desktop) {
+    font-size: $basefontsize__desktop;
+  }
+}
